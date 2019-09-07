@@ -1,0 +1,16 @@
+//This is called steps, when you enter a number it will generate stairs with "#". 
+//you will see the same number of rows and each row increased with the amount of #.
+//example 4 will return
+//#
+//##
+//###
+//####
+
+function steps(n){
+  const stair = "#"
+  for(let row =1; row <= n; row++){
+  console.log(stair.repeat(row) + ''.repeat(n - row))
+  }
+  // console.log(stair)
+}
+steps(15)
